@@ -43,9 +43,9 @@ if [ "$UPDATE" = "1" ]; then
   )
 fi
 
-PARAMS=(--tag chromedp/headless-shell:$VERSION)
+PARAMS=(--tag sherangee/headless-shell:$VERSION)
 for TAG in ${TAGS[@]}; do
-  PARAMS+=(--tag chromedp/headless-shell:$TAG)
+  PARAMS+=(--tag sherangee/headless-shell:$TAG)
 done
 
 (set -x;
